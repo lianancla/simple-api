@@ -20,10 +20,7 @@ export const connection = res.data;
 
 if (res.error == null) console.log("DB is connected");
 
-import { MovieModel } from "./models/movie.model.js";
 
-const resp = await MovieModel.delete({
-  id: 73,
-});
+// faltan hacer las validaciones con zod
 
-console.log(resp)
+//falta convertir el model en una instancia, restructurar, el movieController ,el movieRouter y hacer tests con vitest
